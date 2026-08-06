@@ -1,0 +1,16 @@
+conditions:
+  - full
+  - no_rag
+  - no_axial_separation
+  - no_eap
+  - no_cuse_packager
+  - no_hepatologist
+  - no_transplant_surgeon
+  - no_radiologist
+  - no_medical_oncologist
+  - no_pathologist
+  - no_interventional_radiologist
+  - tsa_only
+  - hra_only
+  - tsa_hra_no_eap_no_bridge
+

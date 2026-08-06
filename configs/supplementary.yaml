@@ -1,0 +1,47 @@
+analyses:
+  - cross_registry
+  - tcga_stage_bootstrap
+  - seer_region
+  - demographic_subgroups
+  - discordance_patterns
+  - confidence_calibration
+  - prompt_ablation
+  - backbone_comparison
+  - rag_retrieval_depth
+  - temperature_sensitivity
+  - staging_noise
+  - edge_cases
+  - guideline_versions
+  - independent_runs
+  - failure_taxonomy
+  - cuse_dimensions
+  - eap_deliberation
+  - agent_disagreement
+  - treatment_distribution
+  - cross_registry_transfer
+  - scaling_stability
+  - agent_combinations
+temperature_values:
+  - 0.0
+  - 0.1
+  - 0.3
+  - 0.5
+  - 0.7
+  - 1.0
+retrieval_depths:
+  - 1
+  - 3
+  - 5
+  - 10
+  - 20
+staging_noise_rates:
+  - 0.0
+  - 0.05
+  - 0.1
+  - 0.2
+guideline_versions:
+  - BCLC_2018
+  - BCLC_2022
+  - BCLC_2024
+  - BCLC_2026
+

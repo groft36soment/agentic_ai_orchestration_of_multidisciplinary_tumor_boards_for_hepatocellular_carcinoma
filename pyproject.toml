@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools==75.8.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hera-mdt"
+version = "1.0.0"
+description = "Hepatic-reserve-aware epistemic arbitration for HCC treatment decisions"
+requires-python = ">=3.11,<3.12"
+dependencies = ["numpy==1.26.4", "scipy==1.12.0", "scikit-learn==1.4.0", "pydantic==2.10.6", "PyYAML==6.0.2", "httpx==0.27.2"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.4", "mypy==1.14.1", "ruff==0.9.4"]
+
+[project.scripts]
+hera-run = "hera_mdt.cli:run_main"
+hera-evaluate = "hera_mdt.cli:evaluate_main"
+hera-prepare = "hera_mdt.cli:prepare_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["hera_mdt"]
+ignore_missing_imports = true

@@ -1,0 +1,2 @@
+Transplant selection integrates tumor criteria, hepatic decompensation, portal hypertension, downstaging response, and candidate fitness.
+

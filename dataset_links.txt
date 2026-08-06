@@ -1,0 +1,5 @@
+TCGA-LIHC GDC Data Portal Release 39.0 | open and controlled tiers | https://portal.gdc.cancer.gov/projects/TCGA-LIHC
+GDC Data Release 39.0 notes | official release metadata | https://docs.gdc.cancer.gov/Data/Release_Notes/Data_Release_Notes/#data-release-390
+SEER November 2023 submission | research agreement required | https://seer.cancer.gov/data-software/documentation/seerstat/nov2023/
+SEER data access | current eligibility and request process | https://seer.cancer.gov/data/access.html
+

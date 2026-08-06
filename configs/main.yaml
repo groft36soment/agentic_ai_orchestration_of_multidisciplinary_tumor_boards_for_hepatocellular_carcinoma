@@ -1,0 +1,25 @@
+system:
+  backbone: gpt-4o
+  temperature: 0.3
+  agents: 6
+  maximum_eap_rounds: 3
+  retrieval_limit: 5
+  epistemic_acts:
+    - PROPOSE
+    - CHALLENGE
+    - BRIDGE
+    - SYNTHESIZE
+evaluation:
+  bootstrap_iterations: 1000
+  independent_runs: 3
+  seed_values:
+    - 2026
+    - 2027
+    - 2028
+  bonferroni_comparisons: 7
+  stages:
+    - 0/A
+    - B
+    - C
+    - D
+
